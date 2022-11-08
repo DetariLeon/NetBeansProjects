@@ -12,7 +12,8 @@ import java.util.Scanner;
  * @author user3
  */
 public class Metodusok {
-       public static float atlag(float a, float b) {
+
+    public static float atlag(float a, float b) {
         return (a + b) / 2;
     }
 
@@ -35,19 +36,16 @@ public class Metodusok {
     public static int random2(int a, int b) {
         return (int) (Math.random() * a) + b;
     }
-    public static double gula(double a,double m){
-        return a*a*m/3;
-        
+
+    public static double gula(double a, double m) {
+        return a * a * m / 3;
+
     }
-    
-    
-    
-    
-    
+
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner bill = new Scanner(System.in);
-        float a, b,m ,T;
+        float a, b, m, T;
         int c, d;
 
         fejlec();
@@ -83,20 +81,13 @@ public class Metodusok {
         for (int i = 0; i < szamok.length; i++) {
             System.out.println(szamok[i] + "\t");
         }
-        
+
         //Gula térfogata
         System.out.println("Terület:");
-        double alap=bill.nextDouble();
+        double alap = bill.nextDouble();
         System.out.println("Magasság:");
-        double magassag=bill.nextDouble();
-        System.out.println(gula(alap,magassag));
-        
-        
-        
-        
-    }   
-    }
-        
-    
-    
+        double magassag = bill.nextDouble();
+        System.out.println(gula(alap, magassag));
 
+    }
+}
