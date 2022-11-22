@@ -44,12 +44,17 @@ public class Orai1122 {
     }
 
     public static int Ossze(int g) {
-
+        int i, osszeg = 0;
+        for(i=0;i<String.valueOf(g).length();i++){
+            osszeg=osszeg+ Integer.valueOf(String.valueOf(g).charAt(i)-48);
+           
+        }
+        return osszeg;
     }
 
     public static void main(String[] args) {
         Scanner bill = new Scanner(System.in);
-        int a, b, c, d, e, f;
+        int a, b, c, d, e, f, g;
         String Kozep, Maganhang, Szo;
         System.out.println("Adjál meg három számot:");
         a = bill.nextInt();
@@ -74,6 +79,10 @@ public class Orai1122 {
         e = bill.nextInt();
         f = bill.nextInt();
         System.out.println(NovSor(d, e, f));
+
+        System.out.println("Szam:");
+        g = bill.nextInt();
+        System.out.println(Ossze(g));
 
     }
 
