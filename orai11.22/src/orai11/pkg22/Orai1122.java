@@ -46,7 +46,11 @@ public class Orai1122 {
     public static int Ossze(int g) {
         int i, osszeg = 0;
         for(i=0;i<String.valueOf(g).length();i++){
-            osszeg=osszeg+ Integer.valueOf(String.valueOf(g).charAt(i)-48);
+            
+                    
+                    
+                    
+                    ;
            
         }
         return osszeg;
