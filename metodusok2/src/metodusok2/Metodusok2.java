@@ -51,7 +51,7 @@ public class Metodusok2 {
 
         int a, i;
         String matrixCode = "";
-        
+
         for (i = 0; i < n; i++) {
             for (a = 0; a < 5; a++) {
                 if (rand.nextInt(2) == 1) {
@@ -70,6 +70,7 @@ public class Metodusok2 {
         System.out.println(paros(22));
         System.out.println(kozep(2, 5, 8));
         Matrix(5);
+        
     }
 
 }
