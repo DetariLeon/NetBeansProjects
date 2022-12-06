@@ -11,8 +11,7 @@ package gyak12.pkg02;
  */
 public class Gyak1202 {
 
-    public static void masodikLeg(int tomb[], int tombnagy)
-    {
+    public static void masodikLeg(int tomb[], int tombnagy) {
         int i, elso, masodik;
 
         elso = masodik = Integer.MIN_VALUE;
@@ -20,15 +19,20 @@ public class Gyak1202 {
             if (tomb[i] > elso) {
                 masodik = elso;
                 elso = tomb[i];
-            }
-            else if (tomb[i] > masodik && tomb[i] != elso)
+            } else if (tomb[i] > masodik && tomb[i] != elso) {
                 masodik = tomb[i];
+            }
         }
- 
-        System.out.println("Második legnagyobb szám: "+ masodik);
+
+        System.out.println("Második legnagyobb szám: " + masodik);
     }
+
+    public static boolean azonose(int egyenlo) {
+        return false;
+    }
+
     public static void main(String[] args) {
-     int tomb[] = { 10, 19, 21, 32, 53 };
+        int tomb[] = {10, 19, 21, 32, 53};
         int a = tomb.length;
         masodikLeg(tomb, a);
     }
